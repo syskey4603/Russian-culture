@@ -1,0 +1,49 @@
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    background: #000000;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hidevideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.playButton {
+    width: 100%;
+    height: 75%;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    margin-top: 200px;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-size: 80px;
+}
+
+.videowrapper {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="style2.css">
+
+
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="maincontainer">
+        <div class="videowrapper">
+            <div class="hidevideo" id="hidevideo">
+                <video id="myVideo" width="100%" height="100%">
+                <source src="exportidk.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="playButton" id="playButton" onclick="playPause()">Start</div>
+        </div>
+</body>
+
+<script type='text/javascript'>
+    document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+
+    function myHandler(e) {
+        window.location.href = 'main.html'
+    }
+
+    function playPause() {
+        document.getElementById("hidevideo").style.opacity = "1";
+        document.getElementById("playButton").style.opacity = "0";
+        var myVideo = document.getElementById('myVideo')
+        if (myVideo.paused) {
+            myVideo.play();
+        }
+    }
+</script>
+
+</html>
